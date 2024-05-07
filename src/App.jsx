@@ -6,12 +6,12 @@ const socket = io('https://socket.xasena.me/');
 const App = () => {
   const [userCount, setUserCount] = useState(0);
   const [isCountAnimating, setIsCountAnimating] = useState(false);
-
   useEffect(() => {
     socket.on('userCount', (count) => {
       setIsCountAnimating(true);
+    
       setTimeout(() => {
-        setUserCount(count);
+        setUserCount(count-1);
         setIsCountAnimating(false);
       }, 500);
     });
