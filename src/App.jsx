@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('https://socket.xasena.me/');
+const socket = io('https://socket.maskser.me/');
 
 const App = () => {
   const [userCount, setUserCount] = useState(0);
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center">
       <div className="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
-        <h1 className="text-4xl font-bold text-indigo-400 mb-4">X-Electra Bot</h1>
+        <h1 className="text-4xl font-bold text-indigo-400 mb-4">Izumi-v3</h1>
         <div className="flex items-center justify-center">
           <div
             className={`text-6xl font-bold text-indigo-400 transition-all duration-500 ${
