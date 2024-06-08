@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('https://socket.maskser.me/');
+const socket = io('https://server.maskser.me/');
 
 const App = () => {
   const [userCount, setUserCount] = useState(0);
